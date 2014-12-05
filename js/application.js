@@ -20,7 +20,7 @@ $(document).ready(function(){
     }
   }
 
-  function getTemp(url){
+  function getPrice(url){
     $.ajax({
       type: 'GET',
       url: url,
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
   }
 
-  getTemp(url);
+  getPrice(url);
 
   function initializeHighChart(){
     $('#chart').highcharts({
